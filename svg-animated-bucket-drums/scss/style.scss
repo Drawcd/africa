@@ -1,0 +1,22 @@
+// Variables
+$yellow: #FFE066;
+$yellow-light: #FFF1D0;
+$blue: #247BA0;
+$green: #70C1B3;
+$red: #F25F5C;
+$dark: #50514F;
+
+// Basic styling
+body {
+  background: $yellow;
+}
+
+svg {
+	height: 100vh;
+	width: 100vw;
+	display: block;
+}
+
+.hidden {
+	display: none;
+}

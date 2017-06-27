@@ -1,0 +1,424 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+article {
+  display: inline-block;
+}
+
+.africa-main-bg {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.lion-glue-wrap {
+  width: 430px;
+  height: 210px;
+  position: absolute;
+  top: 100px;
+  transform: translateZ(210px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.lion-glue1 {
+  position: absolute;
+  left: 131px;
+  top: 170px;
+  width: 325px;
+  height: 210px;
+  background: url(../images/glue.svg) no-repeat;
+  transform: translateZ(210px);
+}
+
+.lion-glue2 {
+  position: absolute;
+  left: 131px;
+  top: 170px;
+  width: 325px;
+  height: 210px;
+  background: url(../images/glue.svg) no-repeat;
+  transform: translateZ(210px);
+}
+
+.lion {
+  height: 360px;
+  width: 435px;
+  position: absolute;
+}
+
+#lion {
+  height: 360px;
+  width: 435px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: move;
+  position: relative;
+}
+
+.lion-tail {
+  position: absolute;
+  left: 231px;
+  top: 30px;
+  width: 94px;
+  height: 77px;
+  background: url(../images/11-tail.svg) no-repeat;
+  -webkit-transform: translateZ(-5px);
+}
+
+.lion-foot01 {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 64px;
+  height: 122px;
+  background: url(../images/12-foot01.svg) no-repeat;
+  -webkit-transform: translateZ(-20px);
+}
+
+.lion-foot02 {
+  position: absolute;
+  left: 91px;
+  top: 100px;
+  width: 64px;
+  height: 122px;
+  background: url(../images/14-foot03.svg) no-repeat;
+  -webkit-transform: translateZ(20px);
+}
+
+.lion-foot03 {
+  position: absolute;
+  left: 145px;
+  top: 100px;
+  width: 64px;
+  height: 122px;
+  background: url(../images/13-foot02.svg) no-repeat;
+  -webkit-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+}
+
+.lion-foot04 {
+  position: absolute;
+  left: 194px;
+  top: 100px;
+  width: 64px;
+  height: 122px;
+  background: url(../images/14-foot03.svg) no-repeat;
+  -webkit-transform: translateZ(18px);
+}
+
+.lion-body {
+  position: absolute;
+  left: 118px;
+  top: 137px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-100px);
+}
+
+.lion-trunk {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 255px;
+  height: 160px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background: url(../images/10-trunk.svg) no-repeat;
+  -webkit-transform: translateZ(0px);
+  -webkit-animation: _lion-trunk 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: _lion-trunk 5s infinite;
+  animation-delay: 2s;
+}
+
+.lion-trunk:hover {
+  animation: _lion-trunk_h 0.5s infinite;
+  transition-timing-function: ease-in;
+}
+
+@-webkit-keyframes _lion-trunk_h {
+  25% {
+    transform-origin: 50% 50%;
+    transform: rotate(1.5deg);
+  }
+  50% {
+    /*top:-10px;*/
+    transform: rotate(0deg);
+  }
+  75% {
+    transform-origin: 50% 50%;
+    transform: rotate(-1.5deg);
+  }
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+}
+
+.lion-mane {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 294px;
+  height: 263px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background: url(../images/09.mane.png) no-repeat;
+  /*-webkit-transform: translateZ(150px);*/
+}
+
+.lion-mane:hover {
+  /*-webkit-transform: translateZ(150px);*/
+  animation: _lion-mane 3s infinite;
+  transition-timing-function: ease-in;
+  /*animation-delay: 0s;*/
+}
+
+@-webkit-keyframes _lion-mane {
+  0% {
+    transform-origin: 50% 50%;
+    top: +1px;
+  }
+  5% {
+    top: -1px;
+  }
+  10% {
+    transform-origin: 50% 50%;
+    top: +1px;
+  }
+  15% {
+    top: -1px;
+  }
+  20% {
+    transform-origin: 50% 50%;
+    top: +1px;
+  }
+  25% {
+    top: 0px;
+  }
+  100% {}
+}
+
+.lion-ear {
+  position: absolute;
+  left: 43px;
+  top: 63px;
+  width: 208px;
+  height: 50px;
+  background: url(../images/08-ear.png) no-repeat;
+  -webkit-transform: translateZ(20px);
+  animation: _lion-ear 3s infinite;
+}
+
+@-webkit-keyframes _lion-ear {
+  0% {
+    transform-origin: 50% 50%;
+    top: 63px;
+  }
+  1% {
+    top: 65px;
+  }
+  2% {
+    top: 63px;
+  }
+  4% {
+    top: 65px;
+  }
+  5% {
+    top: 63px;
+  }
+  6% {
+    top: 65px;
+  }
+  7% {
+    top: 63px;
+  }
+  100% {}
+}
+
+.lion-face {
+  position: absolute;
+  left: 43px;
+  top: 63px;
+  width: 204px;
+  height: 193px;
+  background: url(../images/07-face.png) no-repeat;
+  -webkit-transform: translateZ(40px);
+}
+
+.lion-eye {
+  position: absolute;
+  left: 83px;
+  top: 137px;
+  /*background: url(../images/06-eye.png) no-repeat; */
+  -webkit-transform: translateZ(60px);
+}
+
+.lion-eye>div>.lion-eye-img {
+  width: 128px;
+  height: 30px;
+  animation: lion-eye 5s infinite;
+}
+
+@-webkit-keyframes lion-eye {
+  0% {
+    height: 30px;
+  }
+  40% {
+    height: 30px;
+  }
+  45% {
+    height: 5px;
+  }
+  55% {
+    height: 5px;
+  }
+  60% {
+    height: 30px;
+  }
+  1000% {
+    height: 30px;
+  }
+}
+
+.lion-focus {
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  width: 105px;
+  height: 8px;
+  /*background: url(../images/05-focus.png) no-repeat;*/
+  -webkit-transform: translateZ(128px);
+}
+
+.lion-eye>div>.lion-focus {
+  width: 105px;
+  height: 8px;
+  animation: lion-focus 5s infinite;
+}
+
+@-webkit-keyframes lion-focus {
+  0% {
+    height: 8px;
+  }
+  40% {
+    height: 8px;
+  }
+  45% {
+    height: 1px;
+  }
+  55% {
+    height: 1px;
+  }
+  60% {
+    height: 8px;
+  }
+  1000% {
+    height: 8px;
+  }
+}
+
+.lion-fmane {
+  position: absolute;
+  left: 95px;
+  top: 30px;
+  width: 101px;
+  height: 82px;
+  background: url(../images/04-fmane.png) no-repeat;
+  -webkit-transform: translateZ(70px);
+}
+
+.lion-snout {
+  position: absolute;
+  left: 70px;
+  top: 167px;
+  width: 154px;
+  height: 89px;
+  background: url(../images/03-snout.png) no-repeat;
+  -webkit-transform: translateZ(55px);
+}
+
+.lion-cheek {
+  position: absolute;
+  left: 74px;
+  top: 165px;
+  width: 147px;
+  height: 20px;
+  background: url(../images/02-cheek.png) no-repeat;
+  -webkit-transform: translateZ(60px);
+}
+
+.lion-nose {
+  position: absolute;
+  left: 120px;
+  top: 172px;
+  width: 55px;
+  height: 52px;
+  background: url(../images/02-nose.png) no-repeat;
+  -webkit-transform: translateZ(90px);
+}
+
+.lion-mustache {
+  position: absolute;
+  left: 15px;
+  top: 170px;
+  width: 265px;
+  height: 44px;
+  background: url(../images/01-mustache.png) no-repeat;
+  -webkit-transform: translateZ(90px);
+}
+
+.btn-wrap {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+}
+
+
+/* button*/
+
+.myButton {
+  -moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+  -webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+  background: -moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: -webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: -o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: -ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e', GradientType=0);
+  background-color: #7892c2;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 19px;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+  background: -moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+  background: -webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+  background: -o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+  background: -ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2', GradientType=0);
+  background-color: #476e9e;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
